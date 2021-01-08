@@ -30,6 +30,13 @@ body {
     /*box-shadow: 1px 1px 6px rgb(0 0 0 / 20%);*/
 }
 
+@media (max-width: 479px){
+  #mainNav{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 @media (min-width: 480px) and (max-width: 1026px){
 
   #mainNav { 
@@ -56,12 +63,31 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+@media (max-width: 479px) {
+  .navbar-light .navbar-nav .nav-link {
+    margin-left: 5px;
+  }
+}
+
+
+@media (min-width: 480px) and (max-width: 991.98px){
+  .navbar-light .navbar-nav .nav-link {
+    margin-left: 5px;
+  }
+}
+
 /*Social Menu*/
 
 .nav-SociaLink {
     display: block;
     padding: .5rem 1rem 0.8rem 0rem;
     color: rgb(255, 255, 255)!important;
+}
+
+@media (max-width: 479px){
+  .nav-SociaLink {
+    padding: .5rem 0.5rem 0rem 0.5rem;
+  }
 }
 
 a.nav-SociaLink:hover {
@@ -83,7 +109,7 @@ a.nav-SociaLink:hover {
 
 }
 
-@media (max-width: 992px) {
+@media (min-width: 480px) and (max-width: 992px) {
 
   .nav-SociaLink {
       display: block;
@@ -107,7 +133,7 @@ a.nav-SociaLink:hover {
 }
 
 .bgHome {
-  background: linear-gradient(195deg, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%), url(../img/v9.jpg) no-repeat fixed;
+  background: linear-gradient(195deg, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%), url(../img/bg2.jpg) no-repeat fixed;
   /* background-image: url(../img/web1.jpg); */
   -webkit-background-size: cover;
   -webkit-background-size: cover;
@@ -207,7 +233,14 @@ a.nav-SociaLink:hover {
     /*border: 1px solid #8080803b;*/
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 479px) {
+  .bio-box {
+    padding: 6%;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1024px) {
   .bio-box {
     margin-top: 30px;
   }
@@ -281,7 +314,7 @@ a.nav-SociaLink:hover {
   justify-content: center;
   text-align: center;
   background-color: #ffc7ca;
-  background-image: url(../img/v11.jpg);
+  background-image: url(../img/bg6.jpg);
   background-repeat: repeat, no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -300,7 +333,7 @@ a.nav-SociaLink:hover {
   justify-content: center;
   text-align: center;
   background-color: #ffc7ca;
-  background-image: url(../img/v10.jpg);
+  background-image: url(../img/bg3.jpg);
   background-repeat: repeat, no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -343,6 +376,10 @@ a.nav-SociaLink:hover {
     align-items: center;
 }*/
 
+.marginbottom{
+  margin-bottom: 50px;
+}
+
 .targetImage {
     color: #eaeaea;
     font-family: 'shrikhandregular', sans-serif;
@@ -363,18 +400,29 @@ a.nav-SociaLink:hover {
     position: relative;
 }
 
-@media(max-width:768px) {
+@media (max-width: 479px) {
+  .targetImage {
+    font-size: 3rem;
+    color: #eaeaea;
+  }
+
+  .targetImageGallery {
+    font-size: 3.1rem;
+  }
+}
+
+@media(min-width: 480px) and (max-width: 991.98px) {
     .targetImage {
         color: #f5be10;
         font-family: 'shrikhandregular', sans-serif;
-        font-size: 3.4em;
+        font-size: 3rem;
         font-weight: 700;
         line-height: 55px;
         text-align: center;
     }
 
     .targetImageGallery {
-        font-size: 2.5em;
+        font-size: 3.1rem;
     }
 }
 
@@ -404,6 +452,21 @@ a.nav-SociaLink:hover {
 
 /*Demoreel Section*/
 
+.flex-container-Demotitle{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1000;
+}
+
+.colorTitlevol1 {
+  color:#f5be10;
+}
+
 .boxDemo {
     min-height: 80vh;
     margin-top: 4%;
@@ -422,6 +485,24 @@ a.nav-SociaLink:hover {
   }
 }
 
+.Boxhidden {
+  visibility: hidden;
+  display: none;
+}
+
+@media (max-width: 479px) {
+  .Boxhidden {
+    visibility: visible;
+    display: block;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 991.98px){
+  .Boxhidden {
+    visibility: visible;
+    display: block;
+  }
+}
 
 
 
@@ -530,7 +611,7 @@ section {
 
 .bgCarousel1portadaGallery {
   /*background: linear-gradient(195deg, rgba(158, 14, 114, 0.23) 25%, rgba(0, 0, 0, 0.24) 100%), url(../img/bg-section9.jpg) no-repeat fixed;*/
-  background-image: url(../img/v6.jpg);
+  background-image: url(../img/bg9.jpg);
   -webkit-background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -577,7 +658,7 @@ section {
 }
 
 .bgCarousel4 {
-  background-image: url(../img/v2.jpg);
+  background-image: url(../img/bg2.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
